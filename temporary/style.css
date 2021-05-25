@@ -1,1 +1,54 @@
+:root{
+    --primary-color : rgba(13,110,139,0.75);
+    --overlay-color : rgba(24, 39 , 51 , 0.85);
+    --menu-speed : 750ms;
+    --size-of-emoji:60px
+ }
 
+
+
+a{
+    text-decoration: none;
+    cursor: context-menu;
+}
+
+p{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(9,  var(--size-of-emoji));
+    grid-gap:50px 30px;
+    grid-auto-rows: 60px;
+
+}
+
+
+
+.grid-container  .grid-item a.product-emoji {
+    font-size: var(--size-of-emoji);
+    position: relative;
+    transform: rotate(30deg);
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+  }
+
+
+.iGotclickedOnMan{
+    background-color: blueviolet;
+    transform: rotate(50deg);
+    padding: 0;
+
+}
+  
+.iGotclickedOnMan +p{
+    transform: rotate(50deg);
+}
